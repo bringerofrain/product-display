@@ -16,7 +16,3 @@ Route::post('/search','ProductController@search');
 Route::get('/product/{id}','ProductController@product')->where('id', '[A-Za-z0-9\-]+');
 Route::get('/initialload','ProductController@initialload');
 Route::get('/admin','ProductController@admin');
-
-
-//TODO Remove This
-Route::get('/test', 'ProductController@test');
