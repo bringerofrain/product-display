@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProductsTable extends Migration
+class CreateProductcronTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,8 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('productcron', function (Blueprint $table) {
             $table->integer('id')->unsigned()->primary();
-            $table->string('name')->index();
-            $table->string('brand')->index();
-            $table->string('type')->index();
-            $table->boolean('aboveground')->nullable();
-            $table->text('images');
-            $table->text('description');
-            $table->text('data');
-
-
-
             $table->timestamps();
         });
     }
@@ -36,6 +26,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('productcron');
     }
 }

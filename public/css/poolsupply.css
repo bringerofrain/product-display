@@ -1,0 +1,146 @@
+.layout {
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  padding-top: 10px; }
+  @media (max-width: 800px) {
+    .layout {
+      width: 400px; } }
+  @media (min-width: 800px) {
+    .layout {
+      width: 800px; } }
+  @media (min-width: 1200px) {
+    .layout {
+      width: 1200px; } }
+
+.container {
+  margin-top: 50px; }
+
+.product-profile {
+  width: 380px;
+  height: 180px;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #DDD;
+  padding: 5px; }
+
+.product-img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  text-align: center;
+  line-height: 11; }
+
+.product-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px; }
+
+.product-details {
+  float: right;
+  width: 215px;
+  position: relative;
+  height: 100%; }
+
+.cb {
+  clear: both; }
+
+.profile-btn {
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
+
+.profile-brand {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: .8em; }
+
+.profile-cata {
+  margin-top: 10px;
+  font-size: .9em; }
+
+.profile-title {
+  font-weight: bold; }
+
+/*Product Page */
+.list-img {
+  width: 80px;
+  margin-right: 80px;
+  float: left; }
+  .list-img img {
+    width: 65px;
+    height: 65px; }
+  @media (min-width: 400px) and (max-width: 799px) {
+    .list-img {
+      margin-right: 10px; } }
+
+.main-img {
+  float: left; }
+  @media (min-width: 400px) and (max-width: 799px) {
+    .main-img {
+      width: 240px; }
+      .main-img img {
+        width: 300px;
+        height: 300px; } }
+  @media (min-width: 800px) {
+    .main-img {
+      width: 350px; }
+      .main-img img {
+        width: 350px;
+        height: 350px; } }
+
+@media (min-width: 400px) and (max-width: 799px) {
+  .ind-product-profile {
+    width: 400px; } }
+@media (min-width: 800px) {
+  .ind-product-profile {
+    float: left;
+    width: 50%; } }
+
+@media (min-width: 400px) and (max-width: 799px) {
+  .mobile-cb {
+    clear: both; } }
+@media (min-width: 800px) {
+  .mobile-cb {
+    float: left;
+    width: 0px; } }
+
+.plabel {
+  font-weight: bold;
+  margin-right: 5px; }
+  @media (min-width: 400px) and (max-width: 799px) {
+    .plabel {
+      text-align: right; } }
+  @media (min-width: 800px) {
+    .plabel {
+      width: 125px;
+      text-align: right; } }
+
+/*Simialr Objects*/
+.similar-products {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+.sp-shell {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 5px 10px;
+  font-size: .8em;
+  cursor: pointer; }
+
+.sp-image img {
+  width: 90px;
+  height: 90px; }
+
+.accord-header {
+  font-size: 14px;
+  cursor: pointer; }
+
+.ind-prod-desc {
+  padding-left: 5px; }
+
+/*# sourceMappingURL=poolsupply.css.map */

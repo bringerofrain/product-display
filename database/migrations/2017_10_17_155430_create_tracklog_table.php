@@ -19,7 +19,7 @@ class CreateTracklogTable extends Migration
             $table->string('controller',25);
             $table->string('method',25);
             $table->string('url');
-            $table->string('from_url');
+            $table->string('from_url')->nullable();
             $table->text('client');
             $table->boolean('mobile');
             $table->timestamps();

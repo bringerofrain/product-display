@@ -10,11 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Client;
 
-Route::get('/', function () {
+Route::get('/', 'ProductController@index');
+Route::post('/search','ProductController@search');
+Route::get('/product/{id}','ProductController@product')->where('id', '[A-Za-z0-9\-]+');
+Route::get('/initialload','ProductController@initialload');
+Route::get('/admin','ProductController@admin');
 
-    $client = new Client(['base_uri'=>'test']);
 
-});
+//TODO Remove This
+Route::get('/test', 'ProductController@test');

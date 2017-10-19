@@ -4,6 +4,8 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Jobs\ProcessProductItems;
+use App\Jobs\ProcessProducts;
 
 class Kernel extends ConsoleKernel
 {
@@ -26,6 +28,8 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->job(new ProcessProducts)->hourly();
+        $schedule->job(new ProcessProductItems)->everyMinute();
     }
 
     /**
